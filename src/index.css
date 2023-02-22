@@ -11,6 +11,10 @@ html {
     font-family: "Poppins", sans-serif;
 }
 
+main {
+    padding-top: 3rem;
+}
+
 /* COMMON */
 h1 {
     font-size: 4rem;
@@ -22,6 +26,7 @@ h3 {
 
 p {
     line-height: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 .medium-light-green {
@@ -30,4 +35,8 @@ p {
 
 .container {
     padding: 3rem 16rem;
+}
+
+.container-header {
+    padding: 0.5rem 16rem;
 }
