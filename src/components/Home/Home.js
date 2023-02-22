@@ -9,7 +9,7 @@ export default function Home() {
                 <h1>
                     Welcome to <span className="medium-light-green">Chirp</span>
                 </h1>
-                <h3>
+                <h3 className="medium-light-green">
                     the social networking app that lets you share short messages and connect with others in real time.
                 </h3>
             </div>
