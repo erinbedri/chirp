@@ -1,7 +1,13 @@
 import "./App.css";
 
+import Home from "./components/Home/Home";
+
 function App() {
-    return <div className="App">test</div>;
+    return (
+        <main>
+            <Home />
+        </main>
+    );
 }
 
 export default App;
