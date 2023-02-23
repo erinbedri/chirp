@@ -20,6 +20,7 @@ function App() {
 
     const userLogout = () => {
         setAuth({});
+        localStorage.clear();
     };
 
     return (

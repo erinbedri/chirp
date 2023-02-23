@@ -11,6 +11,10 @@
     color: black;
 }
 
+.header-logo .logo-link h2 {
+    margin: 0;
+}
+
 .header-nav {
     display: flex;
 }

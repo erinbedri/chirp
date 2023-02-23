@@ -28,6 +28,7 @@ h1 {
 h2 {
     font-size: 1.75rem;
     color: var(--clr-dark-green);
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -53,4 +54,36 @@ b {
 
 .container-header {
     padding: 0.5rem 16rem;
+}
+
+.container-form {
+    padding: 3rem 16rem;
+    width: 60rem;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    background-color: var(--clr-medium-light-green);
+
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--clr-light-green);
 }

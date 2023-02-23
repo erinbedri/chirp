@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
+import "./login.css";
 import { AuthContext } from "../../contexts/AuthContext";
 
 export default function Login() {
@@ -27,6 +28,10 @@ export default function Login() {
             body: formdata,
         };
 
+        if (loginData.email == "" || loginData.password == "") {
+            return;
+        }
+
         fetch("http://127.0.0.1:8000/login", requestOptions)
             .then((response) => {
                 if (!response.ok) {
@@ -44,10 +49,10 @@ export default function Login() {
     };
 
     return (
-        <div id="login" className="container">
+        <div id="login" className="container-form">
             <h2>Login</h2>
 
-            <form className="form">
+            <form className="form login-form">
                 <label htmlFor="email">
                     <b>Email</b>
                 </label>
