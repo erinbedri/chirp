@@ -1,28 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 import "./header.css";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export default function Header() {
+    const { user } = useContext(AuthContext);
+
+    console.log(user);
+
     return (
         <header id="header" className="container-header sticky">
             <div className="header-logo">
-                <h3>
-                    <a href="#">LOGO</a>
-                </h3>
+                <Link to="/" className="logo-link">
+                    <h2 className="medium-light-green">CHIRP</h2>
+                </Link>
             </div>
 
-            <div className="header-controls">
-                <ul className="main-nav" role="list">
-                    <li className="nav-item">
-                        <a href="#">Login</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Register</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Logout</a>
-                    </li>
-                </ul>
+            <div className="header-nav">
+                <NavLink to="/posts">Posts</NavLink>
+
+                {user.access_token ? (
+                    <NavLink to="/logout">Logout</NavLink>
+                ) : (
+                    <>
+                        <NavLink to="/login">Login</NavLink>
+                        <NavLink to="/register">Register</NavLink>
+                    </>
+                )}
             </div>
         </header>
     );

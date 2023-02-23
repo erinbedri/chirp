@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 
 :root {
     --clr-dark-green: #3c6255;
     --clr-medium-dark-green: #61876e;
     --clr-medium-light-green: #a6bb8d;
     --clr-light-green: #eae7b1;
+    --clr-light-background: #d1d7dc7e;
 }
 
 html {
@@ -13,20 +15,32 @@ html {
 
 main {
     padding-top: 3rem;
+    background-color: var(--clr-light-background);
+    min-height: 100vh;
 }
 
 /* COMMON */
 h1 {
     font-size: 4rem;
+    color: var(--clr-dark-green);
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--clr-dark-green);
 }
 
 h3 {
     font-size: 1.25rem;
+    color: var(--clr-dark-green);
 }
 
 p {
     line-height: 1.75rem;
-    margin-bottom: 1rem;
+}
+
+b {
+    color: var(--clr-dark-green);
 }
 
 .medium-light-green {

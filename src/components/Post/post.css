@@ -1,0 +1,30 @@
+.post-item:first-child {
+    margin-top: 1rem;
+}
+
+.post-item {
+    border-radius: 1rem;
+    background-color: white;
+
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.post-item .controls {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.post-item .controls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.post-item .controls > i {
+    font-size: 1.25rem;
+    color: var(--clr-dark-green);
+}
+
+.post-item .controls > i:hover {
+    cursor: pointer;
+}

@@ -41,7 +41,6 @@ export default function Home() {
                     thousands of chirps shared every day, Chirp is the place to be for real-time communication and
                     connection.
                 </p>
-                <p>Join the conversation today and see what all the buzz is about!</p>
             </div>
         </div>
     );
