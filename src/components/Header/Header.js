@@ -7,8 +7,6 @@ import { AuthContext } from "../../contexts/AuthContext";
 export default function Header() {
     const { user } = useContext(AuthContext);
 
-    console.log(user);
-
     return (
         <header id="header" className="container-header sticky">
             <div className="header-logo">

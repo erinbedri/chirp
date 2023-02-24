@@ -17,7 +17,7 @@ export default function Login() {
     };
 
     const onSubmit = (e) => {
-        e.preventDefault(e);
+        e.preventDefault();
 
         let formdata = new FormData();
         formdata.append("username", loginData.email);
@@ -52,7 +52,7 @@ export default function Login() {
         <div id="login" className="container-form">
             <h2>Login</h2>
 
-            <form className="form login-form">
+            <form className="form login-form" onSubmit={onSubmit}>
                 <label htmlFor="email">
                     <b>Email</b>
                 </label>
@@ -61,7 +61,7 @@ export default function Login() {
                     <b>Password</b>
                 </label>
                 <input type="password" placeholder="Enter Password" name="password" onChange={changeHandler} required />
-                <button onClick={onSubmit} className="btn" type="submit">
+                <button className="btn" type="submit">
                     Login
                 </button>
             </form>
